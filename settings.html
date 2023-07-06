@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main-page">
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <h3>Eslam</h3>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="./index.html" class="sidebar-link">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./settings.html" class="sidebar-link active">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./profile.html" class="sidebar-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./projects.html" class="sidebar-link">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./courses.html" class="sidebar-link">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./friends.html" class="sidebar-link">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./files.html" class="sidebar-link">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./plans.html" class="sidebar-link">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <header class="header" id="header">
+                <input type="search" name="search" id="search" placeholder="Type a Keyword">
+                <div class="header-info">
+                    <div class="notification-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="header-avatar">
+                        <img src="images/avatar.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <h1 class="dashboard">
+                Settings
+            </h1>
+
+            <div class="wrapper">
+                <section class="site-control card p-20">
+                    <div class="main-title">
+                        <h3>Site Control</h3>
+                        <p>Control The Website If There Is Maintenance</p>
+                    </div>
+                    <div class="control-row">
+                        <div class="control-info">
+                            <p>Website Control</p>
+                            <span>Open/Close Website And Type The Reason</span>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="switch-toggle"></div>
+                        </label>
+                        <textarea name="textarea" id="textarea" placeholder="Close Content Message"></textarea>
+                    </div>
+                </section>
+
+                <section class="general-info card p-20">
+                    <div class="main-title">
+                        <h3>General Info</h3>
+                        <p>
+                            General Information About Your Account
+                        </p>
+                    </div>
+                    <div class="general-form">
+                        <label for="general-name">First Name
+                            <input type="text" id="general-name" placeholder="First Name">
+                        </label>
+                        <label for="general-name">Last Name
+                            <input type="text" id="general-lastname" placeholder="Last Name">
+                        </label>
+                        <div class="email-label">
+                            <label for="general-email" id="general-email">Email
+                                <input type="email" id="general-email" value="es@gmail.com" disabled>
+                            </label>
+                            <div class="main-btn">
+                                    <a href="#">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="security-info card p-20">
+                    <div class="main-title">
+                        <h3>Security Info</h3>
+                        <p>Security Information About Your Account</p>
+                    </div>
+                    <div class="security-row">
+                        <div>
+                            <p>Password</p>
+                            <span>Last Change On 25/10/2022</span>
+                        </div>
+                        <div class="main-btn">
+                            <a href="#" class="visit">Change</a>
+                        </div>
+                    </div>
+                    <div class="security-row">
+                        <div>
+                            <p>Two-Factor Authentication</p>
+                            <span>Enable/Disable The Feature</span>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="switch-toggle"></div>
+                        </label>
+                    </div>
+                    <div class="security-row">
+                        <div>
+                            <p>Devices</p>
+                            <span>Check The Login Devices List</span>
+                        </div>
+                        <div>
+                            <span>Devices</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="social-info card p-20">
+                    <div class="main-title">
+                        <h3>Social Info</h3>
+                        <p>Social Media Information</p>
+                    </div>
+                    <div class="social_info-row">
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <div class="social_info-input">
+                            <input type="text" placeholder="Twitter Username">
+                        </div>
+                    </div>
+                    <div class="social_info-row">
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                        <div class="social_info-input">
+                            <input type="text" placeholder="Facebook Username">
+                        </div>
+                    </div>
+                    <div class="social_info-row">
+                        <span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <div class="social_info-input">
+                            <input type="text" placeholder="Youtube Channel">
+                        </div>
+                    </div>
+                    <div class="social_info-row">
+                        <span>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        <div class="social_info-input">
+                            <input type="text" placeholder="Linkedin Username">
+                        </div>
+                    </div>
+                </section>
+                <section class="Widgets card p-20">
+                    <div class="main-title">
+                        <h3>Widgets Control</h3>
+                        <p>Show/Hide Widgets</p>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="one" id="one" checked>
+                        <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="two" id="two" checked>
+                        <label for="two">Yearly Targets</label>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="three" id="three" checked>
+                        <label for="three">Tickets Statistics</label>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="four" id="four" checked>
+                        <label for="four">Latest News</label>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="five" id="five">
+                        <label for="five">Latest Tasks</label>
+                    </div>
+                    <div class="widget-row">
+                        <input type="checkbox" name="six" id="six" checked>
+                        <label for="six">Top Search Items</label>
+                    </div>
+                </section>
+
+                <section class="backup card p-20">
+                    <div class="main-title">
+                        <h3>Backup Manager</h3>
+                        <p>Control Backup Time And Location</p>
+                    </div>
+                    <div class="backup-radios">
+                        <div class="radio">
+                            <input type="radio" id="daily" name="time">
+                            <label for="daily">Daily</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="weekly" name="time">
+                            <label for="weekly">Weekly</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="monthly" name="time" checked>
+                            <label for="monthly">Monthly</label>
+                        </div>
+                    </div>
+                    <div class="servers">
+                        <div class="server">
+                            <span><i class="fa-solid fa-server mb-10"></i></span>
+                            <p>Megaman</p>
+                        </div>
+                        <div class="server">
+                            <span><i class="fa-solid fa-server mb-10"></i></span>
+                            <p>Zero</p>
+                        </div>
+                        <div class="server">
+                            <span><i class="fa-solid fa-server mb-10"></i></span>
+                            <p>Sigma</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
