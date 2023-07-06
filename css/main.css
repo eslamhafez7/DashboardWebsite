@@ -1958,6 +1958,12 @@ table tbody td span.red {
     .sidebar .sidebar-link span {
         display: none;
     }
+    .header input {
+        width: 130px;
+    }
+    .header input:focus {
+        width: 160px;
+    }
     .dashboard {
         font-size: 22px;
     }
