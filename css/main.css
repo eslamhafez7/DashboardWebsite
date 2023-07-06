@@ -1953,6 +1953,7 @@ table tbody td span.red {
     .sidebar .sidebar-link {
         padding: 10px;
         border-radius: 50%;
+        justify-content: center;
     }
     .sidebar .sidebar-link span {
         display: none;
@@ -2004,11 +2005,20 @@ table tbody td span.red {
     .news-content {
         flex-direction: column;
     }
+    .news-content .news-image img {
+        margin-bottom: 15px;
+    }
+    .news-content span {
+        font-size: 15px;
+    }
     .news .news-content div:nth-child(2) {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .security-row {
+        padding: 20px 0;
     }
     .search-row {
         padding: 20px 10px;
@@ -2016,6 +2026,9 @@ table tbody td span.red {
     .search-row p.light,
     .search-row span.light {
         font-size: 14px;
+    }
+    .post-row:nth-last-child(2) p {
+        padding: 0 10px 0 0;
     }
     .upload-row.p-20 {
         padding: 20px 10px;
